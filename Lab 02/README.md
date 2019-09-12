@@ -1,10 +1,11 @@
+
 # Lab 02: Lexical Analyzer
 
 ## Language used: C
 
 ## Tasks
 
-###1: Write a C program to simulate lexical analyzer for validating operators.
+### 1: Write a C program to simulate lexical analyzer for validating operators.
 
 PROGRAM LOGIC :
 Read the given input.
@@ -18,7 +19,7 @@ Input Enter any operator: *
 
 Output: Multiplication
 
-###2: Write a C program to test whether a given identifier is valid or not
+### 2: Write a C program to test whether a given identifier is valid or not
 
 PROGRAM LOGIC :
 Read the given input string.
@@ -28,7 +29,7 @@ Example:
 Input: Enter an identifier: first Output: Valid identifier
 Input: Enter an identifier:1aqw Output: Not a valid identifier
 
-###3: Write a C Program to Design Lexical Analyzer. Lexical analyzer should ignore redundant spaces, tabs
+### 3: Write a C Program to Design Lexical Analyzer. Lexical analyzer should ignore redundant spaces, tabs
 PROGRAM LOGIC :
 Input : Enter the Program: a+b*c (this is just example, program should have the ability to take any given input
 Output : The keywords and identifiers are:
