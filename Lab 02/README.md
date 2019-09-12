@@ -27,6 +27,7 @@ Check the initial character of the string is numerical or any special character 
 Example:
 
 Input: Enter an identifier: first Output: Valid identifier
+
 Input: Enter an identifier:1aqw Output: Not a valid identifier
 
 ### 3: Write a C Program to Design Lexical Analyzer. Lexical analyzer should ignore redundant spaces, tabs
@@ -34,4 +35,5 @@ PROGRAM LOGIC :
 Input : Enter the Program: a+b*c (this is just example, program should have the ability to take any given input
 Output : The keywords and identifiers are:
 a is an identifier b is an identifier c is an identifier
+
 Special characters are +* Total no. of lines are:1
