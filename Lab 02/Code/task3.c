@@ -23,19 +23,31 @@ int main(int argc, char const *argv[]){
 }
 
 void identifiers(char input[]){
-	char specialCharacters[STRING_SIZE];
-	int str_i = 0;
+	char specialCharacters[STRING_SIZE], identifier[STRING_SIZE];
+	int str_i = 0, endIdentifier=0, beginIdentifier=0;
+
+	printf("\nIdentifiers: ");
 	for (int i = 0; i < strlen(input); ++i){
-		if((input[i] >= 'a' && input[i] <= 'z') || (input[i] >= 'A' && input[i] <= 'Z'))
-			printf("%c is an identifier\n", input[i]);
-		if (input[i] == '+' || input[i] == '*' || input[i] == '-' || input[i] == '/' || input[i] == '%'){
+		if (input[i] == '+' || input[i] == '*' || input[i] == '-' || input[i] == '/' || input[i] == '%' || input[i] == '='){
 			specialCharacters[str_i] = input[i];
 			str_i++;
+			endIdentifier = i;
 		}
+		for (int i = beginIdentifier; i < endIdentifier; ++i){
+			if (input[i] == '+' || input[i] == '*' || input[i] == '-' || input[i] == '/' || input[i] == '%' || input[i] == '='){
+				printf(" ");
+				continue;
+			}
+			printf("%c", input[i]);
+		}
+		beginIdentifier = endIdentifier;
 	}
-	printf("Special Characters: ");
-	for (int i = 0; i < strlen(specialCharacters); ++i){
+
+	for (int j = beginIdentifier + 1; j < strlen(input); ++j)
+		printf(" %c", input[j]);
+
+	printf("\nSpecial Characters: ");
+	for (int i = 0; i < strlen(specialCharacters); ++i)
 		printf("%c ", specialCharacters[i]);
-	}
 	printf("\n");
 }
