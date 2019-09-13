@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define STRING_SIZE 10
+#define STRING_SIZE 128
 
 void identifiers(char []);
 
@@ -13,7 +13,7 @@ int main(int argc, char const *argv[]){
 		printf("\nInsert Statement: ");
 		fgets(input, STRING_SIZE, stdin);
 		numLines++;
-		if (input[0] == 'q')
+		if (strcmp(input, "q\n") == 0)
 			break;
 		else
 			identifiers(input);
@@ -43,8 +43,9 @@ void identifiers(char input[]){
 		beginIdentifier = endIdentifier;
 	}
 
+	printf(" ");
 	for (int j = beginIdentifier + 1; j < strlen(input); ++j)
-		printf(" %c", input[j]);
+		printf("%c", input[j]);
 
 	printf("\nSpecial Characters: ");
 	for (int i = 0; i < strlen(specialCharacters); ++i)
