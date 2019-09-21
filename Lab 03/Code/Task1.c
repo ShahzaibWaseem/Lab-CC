@@ -22,6 +22,7 @@ int main(int argc, char const *argv[]){
 
     bufferFill(filePtr, buffer);
 
+    // if an EOF is encountered insert <EOF>
     for (i = 0; i < strlen(buffer) && i < BUFFER_SIZE; ++i)
     	printf(buffer[i] == EOF ? "<EOF>" : "%c", buffer[i]);
 
