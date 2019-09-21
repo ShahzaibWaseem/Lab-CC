@@ -55,7 +55,7 @@ void inputBuffering(char *buffer){
     		lexemeBegin=&buffer[i+1];
     		fp=&buffer[i+1];
     	}
-    	else if (*fp == ' '){
+    	else if (*fp == ' ' || *fp == '\t' || *fp == '\n'){
     		identifiers(lexemeBegin, fp);
     		lexemeBegin=&buffer[i+1];
     		fp=&buffer[i+1];
