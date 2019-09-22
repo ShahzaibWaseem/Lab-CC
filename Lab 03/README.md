@@ -1,4 +1,4 @@
-# Lab 02: Lexical Analyzer
+# Lab 03: Lexical Analyzer
 
 ## Language used: C
 
