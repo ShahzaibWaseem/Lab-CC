@@ -31,7 +31,7 @@ int main(int argc, char const *argv[]){
 	viewQueue(array);
 	int temp = dequeue(array);
 	viewQueue(array);
-	printf("The Number Poped is: %d\n", temp);
+	printf("The Number deQueued is: %d\n", temp);
 
 	return 0;
 }
