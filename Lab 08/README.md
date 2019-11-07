@@ -16,7 +16,7 @@ A -> aAB | aBc | aAc
 E -> TE'
 E'-> +TE / ε
 T -> FT'
-T`-> *FT' / ε
+T'-> *FT' / ε
 F -> (E) / ID
 ```
 
